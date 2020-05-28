@@ -1,0 +1,126 @@
+2020-05-26 11:26:40,109 INFO: Microblog startup [in /Users/heliu/flask/microblog/app/__init__.py:43]
+2020-05-26 22:28:05,822 INFO: Microblog startup [in /Users/heliu/flask/microblog/app/__init__.py:43]
+2020-05-26 22:28:14,038 INFO: Microblog startup [in /Users/heliu/flask/microblog/app/__init__.py:43]
+2020-05-26 23:04:43,885 INFO: Microblog startup [in /Users/heliu/flask/microblog/app/__init__.py:43]
+2020-05-26 23:05:35,184 INFO: Microblog startup [in /Users/heliu/flask/microblog/app/__init__.py:43]
+2020-05-26 23:07:42,242 INFO: Microblog startup [in /Users/heliu/flask/microblog/app/__init__.py:43]
+2020-05-26 23:33:22,939 INFO: Microblog startup [in /Users/heliu/flask/microblog/app/__init__.py:43]
+2020-05-27 09:44:19,630 INFO: Microblog startup [in /Users/heliu/flask/microblog/app/__init__.py:43]
+2020-05-27 09:44:28,097 ERROR: Exception on / [GET] [in /Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/heliu/flask/microblog/app/routes.py", line 24, in index
+    return render_template('index.html', title = 'Home', user = user, posts = posts)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/heliu/flask/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/heliu/flask/microblog/app/templates/base.html", line 17, in template
+    <a href="{{ url_for('logout') }}">Logout</a>
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got 'logout'
+2020-05-27 09:44:57,632 INFO: Microblog startup [in /Users/heliu/flask/microblog/app/__init__.py:43]
+2020-05-27 09:45:06,064 ERROR: Exception on / [GET] [in /Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/heliu/flask/microblog/app/routes.py", line 24, in index
+    return render_template('index.html', title = 'Home', user = user, posts = posts)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/heliu/flask/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/heliu/flask/microblog/app/templates/base.html", line 30, in top-level template code
+    {% block content %} {% endblock %}
+  File "/Users/heliu/flask/microblog/app/templates/index.html", line 20, in block "content"
+    {% include '_post.html' %}
+  File "/Users/heliu/flask/microblog/app/templates/_post.html", line 5, in top-level template code
+    <a href="{{ url_for('user', username=post.auhor.username) }}">
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.models.Post object' has no attribute 'auhor'
+2020-05-27 09:53:14,077 INFO: Microblog startup [in /Users/heliu/flask/microblog/app/__init__.py:43]
+2020-05-27 09:53:15,449 ERROR: Exception on / [GET] [in /Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/heliu/flask/microblog/app/routes.py", line 24, in index
+    return render_template('index.html', title = 'Home', user = user, posts = posts)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/heliu/flask/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/heliu/flask/microblog/app/templates/base.html", line 30, in top-level template code
+    {% block content %} {% endblock %}
+  File "/Users/heliu/flask/microblog/app/templates/index.html", line 20, in block "content"
+    {% include '_post.html' %}
+  File "/Users/heliu/flask/microblog/app/templates/_post.html", line 5, in top-level template code
+    <a href="{{ url_for('user', username=post.auhor.username) }}">
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.models.Post object' has no attribute 'auhor'
+2020-05-27 09:54:53,658 INFO: Microblog startup [in /Users/heliu/flask/microblog/app/__init__.py:43]

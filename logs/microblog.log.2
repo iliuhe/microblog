@@ -1,0 +1,134 @@
+2020-05-27 16:45:38,746 ERROR: Exception on /reset_password_request [POST] [in /Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/heliu/flask/microblog/app/routes.py", line 173, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/heliu/flask/microblog/app/email.py", line 13, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "/Users/heliu/flask/microblog/app/email.py", line 9, in send_email
+    mail.send(msg)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/smtplib.py", line 253, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/smtplib.py", line 341, in connect
+    (code, msg) = self.getreply()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/smtplib.py", line 398, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2020-05-27 16:45:47,376 ERROR: Exception on /reset_password_request [POST] [in /Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/heliu/flask/microblog/app/routes.py", line 173, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/heliu/flask/microblog/app/email.py", line 13, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "/Users/heliu/flask/microblog/app/email.py", line 9, in send_email
+    mail.send(msg)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/smtplib.py", line 253, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/smtplib.py", line 341, in connect
+    (code, msg) = self.getreply()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/smtplib.py", line 398, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2020-05-27 16:52:26,372 ERROR: Exception on /reset_password_request [POST] [in /Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/heliu/flask/microblog/app/routes.py", line 173, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/heliu/flask/microblog/app/email.py", line 13, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "/Users/heliu/flask/microblog/app/email.py", line 9, in send_email
+    mail.send(msg)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/smtplib.py", line 253, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/smtplib.py", line 341, in connect
+    (code, msg) = self.getreply()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/smtplib.py", line 398, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2020-05-27 16:57:30,289 INFO: Microblog startup [in /Users/heliu/flask/microblog/app/__init__.py:45]
+2020-05-27 17:04:42,780 INFO: Microblog startup [in /Users/heliu/flask/microblog/app/__init__.py:45]
+2020-05-27 17:04:58,030 ERROR: Exception on /reset_password_request [POST] [in /Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/heliu/flask/microblog/app/routes.py", line 173, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/heliu/flask/microblog/app/email.py", line 13, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "/Users/heliu/flask/microblog/app/email.py", line 9, in send_email
+    mail.send(msg)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/smtplib.py", line 253, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/smtplib.py", line 341, in connect
+    (code, msg) = self.getreply()
+  File "/Users/heliu/anaconda3/envs/venv/lib/python3.8/smtplib.py", line 398, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
